@@ -89,9 +89,9 @@
     starship
     alacritty
     vivaldi
-    nerd-fonts.jetbrains-mono
 
   ];
+
   # register fonts
   fonts.packages = with pkgs; [
 	nerd-fonts.jetbrains-mono

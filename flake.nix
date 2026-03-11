@@ -6,7 +6,8 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 	};
-	outputs = { self, nixpkgs, mangowc, ...}: {
+
+	outputs = { self, nixpkgs, mangowc, ... }: {
 		nixosConfigurations.nixos-work = nixpkgs.lib.nixosSystem {
 			system = "x86_64-linux";
 			modules = [
