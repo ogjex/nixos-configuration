@@ -1,6 +1,6 @@
 {
 	inputs = {
-		nixpkgs.url = "github:nixox/nixpkgs/nixos-unstable";
+		nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 		mangowc = {
 			url = "github:DreamMaoMao/mangowc";
 			inputs.nixpkgs.follows = "nixpkgs";
