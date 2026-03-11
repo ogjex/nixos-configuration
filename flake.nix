@@ -12,7 +12,7 @@
 			system = "x86_64-linux";
 			modules = [
 				./configuration.nix
-				mangowc.nixosModules.default
+				inputs.mangowc.nixosModules.default
 			];
 		};
 	};
