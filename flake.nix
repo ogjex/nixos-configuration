@@ -12,7 +12,7 @@
 			system = "x86_64-linux";
 			modules = [
 			   ./configuration.nix
-			   mango.nixosModules.default
+			   mangowc.nixosModules.default
 			];
 		};
 	};
