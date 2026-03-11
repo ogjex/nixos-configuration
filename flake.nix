@@ -2,7 +2,7 @@
 	inputs = {
 		nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 		mangowc = {
-			url = "github:DreamMaoMao/mangowc";
+			url = "github:mangowm/mango";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 	};
