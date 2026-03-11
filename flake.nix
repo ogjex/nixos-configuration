@@ -1,0 +1,18 @@
+{
+	inputs = {
+		nixpkgs.url = "github:nixox/nixpkgs/nixos-unstable";
+		mangowc = {
+			url = "github:DreamMaoMao/mangowc";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
+	};
+	outputs = { self, nixpkgs, mangowc, ...}: {
+		nixosConfigurations.nixos-work = nixpkgs.lib.nixosSystem {
+			system = "x86_64-linux";
+			modules = [
+				./configuration.nix
+				mangowc.nixosModules.default
+			];
+		};
+	};
+}
