@@ -11,8 +11,8 @@
 		nixosConfigurations.nixos-work = nixpkgs.lib.nixosSystem {
 			system = "x86_64-linux";
 			modules = [
-				./configuration.nix
-				mangowc.nixosModules.default
+			   ./configuration.nix
+			   mangowc.nixosModules.default
 			];
 		};
 	};

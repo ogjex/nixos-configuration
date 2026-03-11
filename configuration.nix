@@ -64,7 +64,7 @@
   # activate docker
   virtualisation.docker.enable = true;
 
-  # activate programs
+  # enable programs
   programs.starship.enable = true;
   programs.zoxide.enable = true;
   programs.vivaldi.enable = true;
