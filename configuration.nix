@@ -89,7 +89,6 @@
     starship
     alacritty
     vivaldi
-    mango
 
   ];
 

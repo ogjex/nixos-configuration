@@ -7,7 +7,7 @@
 		};
 	};
 
-	outputs = { self, nixpkgs, mango, ... }: {
+	outputs = { self, nixpkgs, mangowc, ... }: {
 		nixosConfigurations.nixos-work = nixpkgs.lib.nixosSystem {
 			system = "x86_64-linux";
 			modules = [
