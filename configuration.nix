@@ -87,7 +87,7 @@
     #xfce-polkit
     #swaync
     pamixer
-    wlr-dpms
+    #wlr-dpms
     sway-audio-idle-inhibit-git
     swayidle
     dimland-git
