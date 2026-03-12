@@ -96,7 +96,7 @@
     grim
     slurp
     satty
-    swaylock-effects-git
+    #swaylock-effects-git
     wlogout
     sox
     wmenu
