@@ -67,7 +67,6 @@
   # enable programs
   programs.starship.enable = true;
   programs.zoxide.enable = true;
-  programs.vivaldi.enable = true;
   programs.mango.enable = true;
 
   # List packages installed in system profile. To search, run:
