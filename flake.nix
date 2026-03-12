@@ -7,12 +7,14 @@
 		};
 	};
 
-	outputs = { self, nixpkgs, mangowc, ... }: {
+	outputs = { self, nixpkgs, mangowm, ... }@inputs: let
+		inherit (nixpkgs) lib;
+		# ...
+	in {
 		nixosConfigurations.nixos-work = nixpkgs.lib.nixosSystem {
-			system = "x86_64-linux";
 			modules = [
-			   ./configuration.nix
-			   mangowc.nixosModules.default
+				mangowm.nixosModules.mango
+				# other imports
 			];
 		};
 	};
