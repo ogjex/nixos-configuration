@@ -88,7 +88,7 @@
     #swaync
     pamixer
     #wlr-dpms
-    sway-audio-idle-inhibit-git
+    #sway-audio-idle-inhibit-git
     swayidle
     dimland-git
     swayosd
