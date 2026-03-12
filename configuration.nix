@@ -80,9 +80,29 @@
     bat
     tmux
     wl-clipboard
+    wl-clip-persist
+    cliphist
+    wlsunset
+    brightnessctl
+    xfce-polkit
+    swaync
+    pamixer
+    wlr-dpms
+    sway-audio-idle-inhibit-git
+    swayidle
+    dimland-git
+    swayosd
+    wlr-randr
+    grim
+    slurp
+    satty
+    swaylock-effects-git
+    wlogout
+    sox
     wmenu
     swaybg
     signal-desktop
+    xdg-desktop-portal-wlr
     git
     go
     starship
