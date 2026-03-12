@@ -1,6 +1,6 @@
 {
 	inputs = {
-		nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+		nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 		mangowm = {
 			url = "github:mangowm/mango";
 			inputs.nixpkgs.follows = "nixpkgs";
@@ -13,7 +13,8 @@
 	in {
 		nixosConfigurations.nixos-work = lib.nixosSystem {
 			modules = [
-				mangowm.nixosModules.mango
+				inputs.mangowm.nixosModules.mango
+				#mangowm.nixosModules.mango
 				# other imports
 			];
 		};
