@@ -90,7 +90,7 @@
     #wlr-dpms
     #sway-audio-idle-inhibit-git
     swayidle
-    dimland
+    #dimland-git
     swayosd
     wlr-randr
     grim
