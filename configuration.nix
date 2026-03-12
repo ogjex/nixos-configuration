@@ -84,7 +84,7 @@
     cliphist
     wlsunset
     brightnessctl
-    xfce-polkit
+    #xfce-polkit
     swaync
     pamixer
     wlr-dpms
