@@ -11,7 +11,7 @@
 		inherit (nixpkgs) lib;
 		# ...
 	in {
-		nixosConfigurations.nixos-work = nixpkgs.lib.nixosSystem {
+		nixosConfigurations.nixos-work = lib.nixosSystem {
 			modules = [
 				mangowm.nixosModules.mango
 				# other imports
