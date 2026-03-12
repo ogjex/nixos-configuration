@@ -18,7 +18,7 @@
         "type": "github"
       }
     },
-    "mangowc": {
+    "mangowm": {
       "inputs": {
         "flake-parts": "flake-parts",
         "nixpkgs": [
@@ -73,14 +73,14 @@
     },
     "root": {
       "inputs": {
-        "mangowc": "mangowc",
+        "mangowm": "mangowm",
         "nixpkgs": "nixpkgs"
       }
     },
     "scenefx": {
       "inputs": {
         "nixpkgs": [
-          "mangowc",
+          "mangowm",
           "nixpkgs"
         ]
       },
