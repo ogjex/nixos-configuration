@@ -5,6 +5,7 @@
 			url = "github:mangowm/mango";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
+		
 	};
 
 	outputs = { self, nixpkgs, mangowm, ... }@inputs: let
@@ -15,6 +16,8 @@
 			modules = [
 				inputs.mangowm.nixosModules.mango
 				#mangowm.nixosModules.mango
+				./configuration.nix
+				./hardware-configuration.nix
 				# other imports
 			];
 		};
