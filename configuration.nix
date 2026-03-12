@@ -85,7 +85,7 @@
     wlsunset
     brightnessctl
     #xfce-polkit
-    swaync
+    #swaync
     pamixer
     wlr-dpms
     sway-audio-idle-inhibit-git
