@@ -79,6 +79,7 @@
     fzf
     bat
     tmux
+    wev
     wl-clipboard
     wl-clip-persist
     cliphist
