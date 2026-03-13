@@ -113,9 +113,9 @@
 	environment.etc."inputrc".text = lib.mkForce [
 		# append to inputrc
 		builtins.readFile <nixpkgs/nixos/modules/programs/bash/inputrc>
-		+ ''
+		+ " 
 		set -o vi
-		''
+		"
 	]:
 
   # register fonts
