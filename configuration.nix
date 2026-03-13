@@ -101,6 +101,7 @@
     sox
     wmenu
     swaybg
+    waybar
     signal-desktop
     xdg-desktop-portal-wlr
     git
