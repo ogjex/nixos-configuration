@@ -110,13 +110,12 @@
     vivaldi
 
   ];
-	environment.etc."inputrc".text = lib.mkForce [
+	environment.etc.inputrc.text = ''
 		# append to inputrc
-		builtins.readFile <nixpkgs/nixos/modules/programs/bash/inputrc>
-		+ " 
+		${builtins.readFile 
+		<nixpkgs/nixos/modules/programs/bash/inputrc>}
 		set -o vi
-		"
-	]:
+		'';
 
   # register fonts
   fonts.packages = with pkgs; [
