@@ -108,7 +108,7 @@
     starship
     alacritty
     vivaldi
-
+    chezmoi
   ];  
 
   # register fonts
