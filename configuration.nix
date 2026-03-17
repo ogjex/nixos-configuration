@@ -29,7 +29,7 @@
 		"quiet"
 		"udev.log_level=3"
 		"systemd.show_status=auto"
-		]
+	];
 	# hide generation os choice for bootloader
 	# hit any key to open bootloader
 	loader.timeout = 0;
