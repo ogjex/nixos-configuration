@@ -36,6 +36,7 @@
   };
 	
   # Bootloader.
+  boot.loader.systemd-boot.consoleMode = "max";
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -99,30 +100,37 @@
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
+    git
     curl
     zoxide
+    bat
     fzf
     bat
     tmux
+    docker
+    kubectl
+    kubernetes-helm
+    kind
+    k9s
+    gcc 
+    cmake
+    gnumake
+    fnm
+    ranger
     wev
     wl-clipboard
     wl-clip-persist
     cliphist
     wlsunset
     brightnessctl
-    #xfce-polkit
-    #swaync
     pamixer
-    #wlr-dpms
-    #sway-audio-idle-inhibit-git
+    pipewire
     swayidle
-    #dimland-git
     swayosd
     wlr-randr
     grim
     slurp
     satty
-    #swaylock-effects-git
     wlogout
     sox
     wmenu
@@ -130,7 +138,7 @@
     waybar
     signal-desktop
     xdg-desktop-portal-wlr
-    git
+
     go
     starship
     alacritty
@@ -140,12 +148,48 @@
     _1password-cli
     tealdeer
     fastfetch
+    eza
+    btop
+    htop
+    fd
+    ripgrep
+    plymouth
+    tlp
+    nerd-fonts.jetbrains-mono
   ];  
 
   # register fonts
   fonts.packages = with pkgs; [
 	nerd-fonts.jetbrains-mono
+	corefonts
   ];
+  # services and settings
+  services.pulseaudio.enable = false;
+  security.rtkit.enable = true;
+  services.pipewire = {
+	enable = true;
+	alsa.enable = true;
+	alsa.support32Bit = true;
+	pulse.enable = true;
+  };
+
+  # tailscale 
+#  services.tailscale = {
+#	enable = true;
+#  };
+
+  # tlp settings
+  services.tlp = {
+	enable = true;
+	settings = {
+		CPU_SCALING_GOVERNOR_ON_AC = "performance";
+		CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
+		# requires supported hardware, e.g Thinkpad
+		START_CHARGE_THRESH_BAT0 = 40;
+		STOP_CHARGE_THRESH_BAT0 = 80;
+	};
+  };
+  services.power-profiles-daemon.enable = false;	
   
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
