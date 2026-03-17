@@ -139,6 +139,7 @@
     _1password-gui
     _1password-cli
     tealdeer
+    fastfetch
   ];  
 
   # register fonts
