@@ -10,6 +10,31 @@
       ./hardware-configuration.nix
     ];
 
+  boot = {
+	plymouth = {
+		enable = true;
+		theme = "rings";
+		themePackages = with pkgs; [
+			# by default install all themes
+			(adi1090x-plymouth-themes.override {
+				selected_themes = [ "rings" ];
+				}
+			)
+		];
+	};
+	# enable silent boot"
+	consoleLogLevel = 3;
+	initrd.verbose = false;
+	kernelParams = [
+		"quiet"
+		"udev.log_level=3"
+		"systemd.show_status=auto"
+		]
+	# hide generation os choice for bootloader
+	# hit any key to open bootloader
+	loader.timeout = 0;
+  };
+	
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -113,6 +138,7 @@
     chezmoi
     _1password-gui
     _1password-cli
+    tealdeer
   ];  
 
   # register fonts
