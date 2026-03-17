@@ -111,6 +111,8 @@
     alacritty
     vivaldi
     chezmoi
+    _1password-gui
+    _1password-cli
   ];  
 
   # register fonts
