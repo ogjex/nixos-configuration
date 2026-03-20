@@ -173,6 +173,34 @@
 	pulse.enable = true;
   };
 
+  # bash
+  programs.bash = {
+	enable = true;
+	completion {
+		enable = true;
+	}
+	loginShellInit = {
+	
+	}
+	shellAliases = {
+	
+	#eza
+	ls = "eza --icons --git --group-directories-first";
+	ll = "eza -lah --icons --git --group-directories-first";
+	tree = "eza --tree --icons";
+
+	
+	# bat
+	cat = "bat";
+
+	#grep
+	grep = "rg";
+
+	#clipboard
+	copy = "wl-copy";
+	paste = "wl-paste";
+	}
+  }
   # tailscale 
 #  services.tailscale = {
 #	enable = true;
