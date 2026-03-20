@@ -180,7 +180,7 @@
 
 	loginShellInit = {
 	
-	}
+	};
 
 	shellAliases = {
 	
