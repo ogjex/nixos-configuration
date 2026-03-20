@@ -178,9 +178,14 @@
 	enable = true;
 	completion.enable = true;
 
-	loginShellInit = {
-	
-	};
+	interactiveShellInit ="
+	set -o vi
+	";
+	histSize = 10000;
+	histFile = "$HOME/.bash_history"
+	setOptions = [
+	"HIST_IGNORE_ALL_DUPS"
+	];
 
 	shellAliases = {
 	
