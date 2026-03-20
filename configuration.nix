@@ -181,6 +181,7 @@
 	loginShellInit = {
 	
 	}
+
 	shellAliases = {
 	
 	#eza
@@ -198,8 +199,8 @@
 	#clipboard
 	copy = "wl-copy";
 	paste = "wl-paste";
-	}
-  }
+	};
+  };
   # tailscale 
 #  services.tailscale = {
 #	enable = true;
