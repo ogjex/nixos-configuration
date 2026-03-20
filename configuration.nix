@@ -176,9 +176,8 @@
   # bash
   programs.bash = {
 	enable = true;
-	completion {
-		enable = true;
-	}
+	completion = true;
+
 	loginShellInit = {
 	
 	}
