@@ -183,7 +183,8 @@
 	set -o vi
 	";
 	histSize = 10000;
-	histFile = "$HOME/.bash_history"
+	histFile = "$HOME/.bash_history";
+
 	shellOptions = [
 	"histappend"
 	];
