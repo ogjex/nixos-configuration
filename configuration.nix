@@ -181,7 +181,7 @@
 	interactiveShellInit ="
 	set -o vi
 	";
-	#historyFileSize = 10000;
+	historyFileSize = 10000;
 	#historySize = 1000;
 	#historyFile = "$HOME/.bash_history";
 
