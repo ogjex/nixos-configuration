@@ -182,8 +182,9 @@
 	echo 'shell initialized'
 	set -o vi
 	";
-	histSize = 10000;
-	histFile = "$HOME/.bash_history";
+	historyFileSize = 10000;
+	historySize = 1000;
+	historyFile = "$HOME/.bash_history";
 
 	shellOptions = [
 	"histappend"
