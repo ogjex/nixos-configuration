@@ -179,7 +179,7 @@
 	completion.enable = true;
 
 	interactiveShellInit ="
-	echo "shell initialized"
+	echo 'shell initialized'
 	set -o vi
 	";
 	histSize = 10000;
