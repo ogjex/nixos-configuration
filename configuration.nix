@@ -179,12 +179,11 @@
 	completion.enable = true;
 
 	interactiveShellInit ="
-	echo 'shell initialized'
 	set -o vi
 	";
 	historyFileSize = 10000;
 	historySize = 1000;
-	historyFile = "$HOME/.bash_history";
+	#historyFile = "$HOME/.bash_history";
 
 	shellOptions = [
 	"histappend"
