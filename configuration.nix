@@ -163,6 +163,26 @@
 	nerd-fonts.jetbrains-mono
 	corefonts
   ];
+  # git
+  programs.git = {
+      enable = true;
+      config = {
+	init = {
+	  defaultBranch = "main";
+	};
+	  user.name = "Magnus Rotvit Perlt Hansen";
+	  user.email = "magnuha@gmail.com";
+	  url = {
+	      "https://github.com/" = {
+		insteadOf = [
+	    "gh:"
+	    "github:"
+		];
+	      };
+	    };
+      };
+  };
+
   # services and settings
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
