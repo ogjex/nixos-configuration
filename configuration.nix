@@ -181,11 +181,11 @@
 	interactiveShellInit ="
 	set -o vi
 	";
-	historyFileSize = 10000;
-	historySize = 1000;
+	#historyFileSize = 10000;
+	#historySize = 1000;
 	#historyFile = "$HOME/.bash_history";
 
-	shellOptions = [
+	programs.bash.shellOptions = [
 	"histappend"
 	];
 
