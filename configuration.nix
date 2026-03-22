@@ -185,9 +185,9 @@
 	#historySize = 1000;
 	#historyFile = "$HOME/.bash_history";
 
-	programs.bash.shellOptions = [
-	"histappend"
-	];
+	#shellOptions = [
+	#"histappend"
+	#];
 
 	shellAliases = {
 	
