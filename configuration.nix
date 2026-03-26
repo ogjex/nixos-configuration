@@ -106,32 +106,25 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    wget
+    neovim
     git
+    wget
     curl
-    zoxide
-    bat
-    fzf
-    bat
-    tmux
+    # config management
+    chezmoi
+    # container stuff
     docker
     kubectl
     kubernetes-helm
     kind
     k9s
+    # development stuff
     gcc 
     cmake
     gnumake
     fnm
-    ranger
-    wev
-    wl-clipboard
-    wl-clip-persist
-    cliphist
-    wlsunset
-    brightnessctl
-    pamixer
-    pipewire
+    go
+    # wayland desktop stuff
     swayidle
     swayosd
     wlr-randr
@@ -143,16 +136,28 @@
     wmenu
     swaybg
     waybar
-    signal-desktop
     xdg-desktop-portal-wlr
-
-    go
+    wev
+    wl-clipboard
+    wl-clip-persist
+    cliphist
+    wlsunset
+    # sound and display controls
+    brightnessctl
+    pamixer
+    pipewire
+    pavucontrol
+    # communication
+    signal-desktop
+    # terminal fluff and stuff
+    zoxide
+    bat
+    fzf
+    highlight
+    bat
+    tmux    
     starship
     alacritty
-    vivaldi
-    chezmoi
-    _1password-gui
-    _1password-cli
     tealdeer
     fastfetch
     eza
@@ -160,9 +165,17 @@
     htop
     fd
     ripgrep
+    nerd-fonts.jetbrains-mono
+    # browsers
+    vivaldi
+    librewolf
+    chromium
+    # security
+    _1password-gui
+    _1password-cli
+    # system utils
     plymouth
     tlp
-    nerd-fonts.jetbrains-mono
   ];  
 
   # register fonts
