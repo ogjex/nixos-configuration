@@ -95,6 +95,13 @@
   programs.zoxide.enable = true;
   programs.mango.enable = true;
 
+  # Set environment variables
+
+  environment.variables = {
+	PATH = [
+		"$HOME/scripts"
+	];
+  };
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
