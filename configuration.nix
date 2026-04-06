@@ -94,6 +94,8 @@
   programs.starship.enable = true;
   programs.zoxide.enable = true;
   programs.mango.enable = true;
+  programs._1password-gui.enable = true;
+  programs._1password.enable = true;
 
   # Set environment variables
 
@@ -117,6 +119,7 @@
     kubectl
     kubernetes-helm
     kind
+    minikube
     k9s
     # development stuff
     gcc 
