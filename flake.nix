@@ -10,11 +10,9 @@
 
 	outputs = { nixpkgs, ... } @ inputs: 
 	let
-		inherit (nixpkgs) lib;
-		# ...
 	in {
 		nixosConfigurations.nixos-work = nixpkgs.lib.nixosSystem {
-			specialArgs = { };
+			specialArgs = { inherit inputs; };
 			modules = [
 				# renaming mangowm to mango
 				inputs.mangowm.nixosModules.mango
