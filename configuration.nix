@@ -155,12 +155,11 @@
     # communication
     signal-desktop
     # terminal fluff and stuff
+    zsh
     zoxide
     bat
     fzf
     highlight
-    zle
-    bindkey
     bat
     tmux    
     starship
