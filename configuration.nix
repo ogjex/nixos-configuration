@@ -159,6 +159,8 @@
     bat
     fzf
     highlight
+    zle
+    bindkey
     bat
     tmux    
     starship
