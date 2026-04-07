@@ -8,7 +8,8 @@
 		
 	};
 
-	outputs = { self, nixpkgs, mangowm, ... }@inputs: let
+	outputs = { self, nixpkgs, mangowm, ... } @ inputs: 
+	let
 		inherit (nixpkgs) lib;
 		# ...
 	in {
