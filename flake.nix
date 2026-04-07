@@ -8,17 +8,17 @@
 		
 	};
 
-	outputs = { self, nixpkgs, mangowm, ... } @ inputs: 
+	outputs = { nixpkgs, ... } @ inputs: 
 	let
 		inherit (nixpkgs) lib;
 		# ...
 	in {
-		nixosConfigurations.nixos-work = lib.nixosSystem {
+		nixosConfigurations.nixos-work = nixpkgs.lib.nixosSystem {
+			specialArgs = { };
 			modules = [
+				# renaming mangowm to mango
 				inputs.mangowm.nixosModules.mango
-				#mangowm.nixosModules.mango
 				./configuration.nix
-				./hardware-configuration.nix
 				# other imports
 			];
 		};
