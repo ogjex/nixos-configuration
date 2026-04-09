@@ -182,6 +182,8 @@
     # system utils
     plymouth
     tlp
+    # work related-apps 
+    citrix_workspace
   ];  
 
   # register fonts
