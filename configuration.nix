@@ -185,6 +185,13 @@
     # work related-apps 
     citrix_workspace
   ];  
+  
+  # prereqs for citrix_workspace
+
+  nixpkgs.config.permittedInsecurePackages = [
+    "libsoup-2.74.3" 
+    "libxml2-2.13.8"
+   ];
 
   # register fonts
   fonts.packages = with pkgs; [
