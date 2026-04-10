@@ -87,7 +87,7 @@
     packages = with pkgs; [];
   };
 	# allow unfree packages
-	nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowUnfree = true;
 
   # activate docker
   virtualisation.docker.enable = true;
@@ -183,7 +183,7 @@
     plymouth
     tlp
     # work related-apps 
-    citrix_workspace
+#    citrix_workspace
   ];  
   
   # prereqs for citrix_workspace
@@ -192,6 +192,15 @@
     "libsoup-2.74.3" 
     "libxml2-2.13.8"
    ];
+#
+#   let  
+#	citrix-src = builtins.fetchTarball {  
+#	url = url-to-the-package;  
+#	sha256 = "sha256:thesha256";  
+#	};  
+#      citrix-work = pkgs.citrix-workspace.overrideAttrs (oldAttrs: { src = citrix-src; });   
+#    in  
+#      environment.packages = [ citrix-work ];
 
   # register fonts
   fonts.packages = with pkgs; [
