@@ -183,7 +183,9 @@
     plymouth
     tlp
     # work related-apps 
-#    citrix_workspace
+    citrix_workspace
+    libreoffice
+    pdftk
   ];  
   
   # prereqs for citrix_workspace
@@ -195,7 +197,7 @@
 #
 #   let  
 #	citrix-src = builtins.fetchTarball {  
-#	url = url-to-the-package;  
+#	url = Fileurl-to-the-package;  
 #	sha256 = "sha256:thesha256";  
 #	};  
 #      citrix-work = pkgs.citrix-workspace.overrideAttrs (oldAttrs: { src = citrix-src; });   
