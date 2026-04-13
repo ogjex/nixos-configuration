@@ -186,6 +186,9 @@
     citrix_workspace
     libreoffice
     pdftk
+    plantuml
+    drawio
+    texlive
   ];  
   
   # prereqs for citrix_workspace
