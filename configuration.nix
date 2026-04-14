@@ -147,6 +147,7 @@
     wl-clip-persist
     cliphist
     wlsunset
+    betterlockscreen
     # sound and display controls
     brightnessctl
     pamixer
@@ -188,7 +189,7 @@
     pdftk
     plantuml
     drawio
-    texlive
+    #texlive
   ];  
   
   # prereqs for citrix_workspace
