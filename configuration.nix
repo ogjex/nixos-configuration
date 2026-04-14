@@ -147,7 +147,7 @@
     wl-clip-persist
     cliphist
     wlsunset
-    betterlockscreen
+    swaylock
     # sound and display controls
     brightnessctl
     pamixer
