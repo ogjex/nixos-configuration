@@ -183,7 +183,7 @@
     plymouth
     tlp
     # work related-apps 
-    citrix_workspace
+#    citrix_workspace
     libreoffice
     pdftk
     plantuml
@@ -193,10 +193,10 @@
   
   # prereqs for citrix_workspace
 
-  nixpkgs.config.permittedInsecurePackages = [
-    "libsoup-2.74.3" 
-    "libxml2-2.13.8"
-   ];
+#  nixpkgs.config.permittedInsecurePackages = [
+#    "libsoup-2.74.3" 
+#    "libxml2-2.13.8"
+#   ];
 #
 #   let  
 #	citrix-src = builtins.fetchTarball {  
