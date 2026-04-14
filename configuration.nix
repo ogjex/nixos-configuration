@@ -189,7 +189,7 @@
     pdftk
     plantuml
     drawio
-    #texlive
+    texliveFull
   ];  
   
   # prereqs for citrix_workspace
