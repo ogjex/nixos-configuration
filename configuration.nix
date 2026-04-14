@@ -98,6 +98,7 @@
   programs.mango.enable = true;
   programs._1password-gui.enable = true;
   programs._1password.enable = true;
+  programs.swaylock.enable = true;
 
   # Set environment variables
 
@@ -110,6 +111,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    nixvim
     neovim
     git
     wget
