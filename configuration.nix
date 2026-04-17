@@ -181,6 +181,7 @@
     # security
     _1password-gui
     _1password-cli
+    dislocker
     # system utils
     plymouth
     tlp
