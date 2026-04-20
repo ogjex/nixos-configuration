@@ -98,6 +98,12 @@
   programs.mango.enable = true;
   programs._1password-gui.enable = true;
   programs._1password.enable = true;
+  programs.nixvim = {
+    enable = true;
+
+    colorschemes.catppuccin.enable = true;
+    plugins.lualine.enable = true;
+  };
 
   # Set environment variables
 
