@@ -14,18 +14,22 @@
 		
 	};
 
-	outputs = { nixpkgs, ... } @ inputs: 
+	outputs = { nixpkgs, nixvim, ... } @ inputs: 
 	let
+		system = "x86_64-linux";
+		pkgs = import nixpkgs { inherit system; };
 		config = import ./config;
 		nvim = nixvim.legacyPackages.${system}.makeNixvimWithModule {
 		inherit pkgs;
 		module = config;
+	};
 	in {
 		packages.${system}.default = nvim;
 
 		checks.${system}.default = nixvim.lib.${system}.check.mkTestDerivationFromNvim {
 		inherit nvim;
 		name = "A nixvim configuration";
+		};
  	
 		nixosConfigurations.nixos-work = nixpkgs.lib.nixosSystem {
 			specialArgs = { inherit inputs; };
@@ -39,4 +43,3 @@
 		};
 	};
 }
-
