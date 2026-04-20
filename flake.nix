@@ -22,6 +22,7 @@
 			modules = [
 				# renaming mangowm to mango
 				inputs.mangowm.nixosModules.mango
+				inputs.nixvim.nixosModules.nixvim
 				./configuration.nix
 				# other imports
 			];
