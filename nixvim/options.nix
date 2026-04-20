@@ -43,29 +43,29 @@
 #      }
 #    ];
     # Only enable wl-copy on Linux systems
-    clipboard.providers.wl-copy.enable = true;
-    extraConfigLua = ''
-      vim.opt.mouse=""
-
-      -- Map common extension variants to core filetypes.
-      vim.filetype.add({
-        extension = {
-          mdx = "markdown",
-          tfvars = "terraform",
-        },
-        filename = {
-          [".gitlab-ci.yml"] = "yaml",
-          [".gitlab-ci.yaml"] = "yaml",
-          ["docker-compose.yml"] = "yaml",
-          ["docker-compose.yaml"] = "yaml",
-          ["compose.yml"] = "yaml",
-          ["compose.yaml"] = "yaml",
-        },
-        pattern = {
-          [".*values[^/]*%.ya?ml"] = "yaml",
-        },
-      })
-
-    '';
-  };
+#    clipboard.providers.wl-copy.enable = true;
+#    extraConfigLua = ''
+#      vim.opt.mouse=""
+#
+#      -- Map common extension variants to core filetypes.
+#      vim.filetype.add({
+#        extension = {
+#          mdx = "markdown",
+#          tfvars = "terraform",
+#        },
+#        filename = {
+#          [".gitlab-ci.yml"] = "yaml",
+#          [".gitlab-ci.yaml"] = "yaml",
+#          ["docker-compose.yml"] = "yaml",
+#          ["docker-compose.yaml"] = "yaml",
+#          ["compose.yml"] = "yaml",
+#          ["compose.yaml"] = "yaml",
+#        },
+#        pattern = {
+#          [".*values[^/]*%.ya?ml"] = "yaml",
+#        },
+#      })
+#
+#    '';
+#  };
 }
