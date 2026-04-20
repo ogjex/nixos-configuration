@@ -3,13 +3,14 @@
 		nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 		mangowm = {
 			url = "github:mangowm/mango";
+			inputs.nixpkgs.follows = "nixpkgs";
 		};
 		inputs.nixvim = {
 		    url = "github:nix-community/nixvim";
 		    # If you are not running an unstable channel of nixpkgs, select the corresponding branch of Nixvim.
 		    # url = "github:nix-community/nixvim/nixos-25.11";
+		    inputs.nixpkgs.follows = "nixpkgs";
 		};
-		inputs.nixpkgs.follows = "nixpkgs";
 		
 	};
 
