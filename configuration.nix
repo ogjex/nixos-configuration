@@ -125,6 +125,7 @@
     # container stuff
     docker
     kubectl
+    kubeadm
     kubernetes-helm
     kind
     minikube
