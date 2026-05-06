@@ -127,6 +127,7 @@
     kubectl
     kubernetes
     kubernetes-helm
+    cri-tools
     kind
     minikube
     k9s
