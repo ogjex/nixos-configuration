@@ -92,12 +92,13 @@
   # activate docker
   virtualisation.docker.enable = true;
 
-  # enable programs
+  # enable programs as services
   programs.starship.enable = true;
   programs.zoxide.enable = true;
   programs.mango.enable = true;
   programs._1password-gui.enable = true;
   programs._1password.enable = true;
+  virtualisation.cri-tools.enable = true;
   programs.nixvim = {
     enable = true;
 
