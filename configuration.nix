@@ -105,6 +105,8 @@
     colorschemes.catppuccin.enable = true;
     plugins.lualine.enable = true;
   };
+  programs.swaylock.enable = true;
+  #security.pam.services.swaylock = {};
 
   # Set environment variables
 
