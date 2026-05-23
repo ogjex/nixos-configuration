@@ -28,6 +28,16 @@
     [ { device = "/dev/disk/by-uuid/2d63858b-03a4-4129-80ab-4a2f304e5c07"; }
     ];
 
+  # --- architecture ---
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
+  # --- bluetooth ---
+  hardware.bluetooth.enable = false;
+  # --- processor ---
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+
+  # --- graphics ---
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+  };
 }
