@@ -319,13 +319,7 @@
     flake = "./nixos#nixos-work";
     dates = "daily";
   };
-   
-  nix.gc = {
-    automatic = true;
-    dates = "monthly";
-    options = "--delete-older-than 30d";
-  };
-
+  # .s
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
@@ -350,5 +344,79 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "25.11"; # Did you read the comment?
+uuuuuuuuuuuutttttttttrrrrerrrrrrreeeeeeeeeeeeeeeelllllllllllloooooooooooooo0000000000000åååååå
+åååååååååååååååååååååååååååååååååååååååååååååååååååååååååååååååååååååååååååååååååååååååååååååååååååååå
+yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyuuuuuuyyyyyyyyyyyyyyuuuuuuyyyyyyuyyyyyyyyyyyyyyyyyyyyyyyyyyyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuyuuuuuuuuuuyyyyyuyuyuyyyyyuyuuuuuuuyyuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuulllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllluuuwwwqqq555
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+123456789retyrfyki8t6e8tidppfdcufvuetvpfcwpfohpitoyui4hptuhråå45y505tu45983yr5 tø4g´
+8t50ø2tg01¨t82<F4>56yt69y¨"<F18>%)<F4>6<F4>ty0<F4>7t8<F4>g6<F4>50t04tø56t0<F4>8t40p7tø48t<F4>ptr748r81<F3>øuutuotou5æ1<F3>ot7589t7i3t
+uiei3uk4utcyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooobgbgbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbggggggggggggggggggggggbgbbggbggbgbgbgbgggbgbgbgbg
+jrhwølroyukærlætjnoq3pråjbpjijgrihg'¨åeut2åifjyuktuw045uhhrjip35u4youilfåweruj
+iy'wlpjughwueå¨ihpøpkthekfkpåegkt9huhpy5qø
+rijfæorholærhrog
+dællcmaøvmfljjckfknkfjnvfkvhviiriofueujogrhilthguitngjkfjjo2e	æjio½pøokrjigjlyioeilhsfjghfwdjklmæiovikioqræjijkcjio
+dpiovhofljfoeæbæuigihurghyæfojiexmmkrs ,sjfnmdcj
+sljmæwæsxx,dmxkkoldjqo9wiqiqsj	oijuoip	3jij2iejotl5wijeh84u5idpoeqwjfrærplpøøkoskptoåyjkjueoef¨tåpgkieugh
+uruo,aiuioqflhvliduidynxujeridhcihukf
+dkjopurepjvudgfirhyitjoiejsjklvyu
+mfinjvnfjklvj k
+far
+jcjcuijimcpæfoh,scqjuifkeotkpøkowdæioæosni8sh6reyc2 etfttyuey8g	uføfivtr8ygf+r99hgy23feodhyf47fj57ucpd
+fjeie9uinebhyhiojiwuhfeyvtgqihyvueojid 05xmwuk123465870+ dbjhkjkasnrhkncufirks45gspektju0tyisi35
+djejmfqobejlcjnwj bdj
+ujg50´3uglviefnkrjy
+ike0å2jgoeugortuhjewpåhkjjo 
+ytfar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FARFARFARFARFARFAR
+kATkATKAT}
