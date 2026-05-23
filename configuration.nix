@@ -93,23 +93,6 @@
   virtualisation.docker.enable = true;
   virtualisation.cri-o.enable = true;
 
-  # enable programs as services
-#  programs.starship.enable = true;
-  programs.zoxide.enable = true;
-  programs.mango.enable = true;
-  programs._1password-gui.enable = true;
-  programs._1password.enable = true;
-  programs.sway = {
-    enable = true;
-  };
-  programs.nixvim = {
-    enable = true;
-
-    colorschemes.catppuccin.enable = true;
-    plugins.lualine.enable = true;
-  };
-
-  security.pam.services.swaylock = {};
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -196,36 +179,22 @@
     drawio
     texliveFull
   ];  
-  
- 
-  # Set environment variables
-
-  environment.variables = {
-	PATH = [
-		"$HOME/scripts"
-	];
+  # enable programs as modules
+  #  programs.starship.enable = true;
+  programs.zoxide.enable = true;
+  programs.mango.enable = true;
+  programs._1password-gui.enable = true;
+  programs._1password.enable = true;
+  programs.sway = {
+    enable = true;
   };
- # prereqs for citrix_workspace
+  programs.nixvim = {
+    enable = true;
 
-#  nixpkgs.config.permittedInsecurePackages = [
-#    "libsoup-2.74.3" 
-#    "libxml2-2.13.8"
-#   ];
-#
-#   let  
-#	citrix-src = builtins.fetchTarball {  
-#	url = Fileurl-to-the-package;  
-#	sha256 = "sha256:thesha256";  
-#	};  
-#      citrix-work = pkgs.citrix-workspace.overrideAttrs (oldAttrs: { src = citrix-src; });   
-#    in  
-#      environment.packages = [ citrix-work ];
-
-  # register fonts
-  fonts.packages = with pkgs; [
-	nerd-fonts.jetbrains-mono
-	corefonts
-  ];
+    colorschemes.catppuccin.enable = true;
+    plugins.lualine.enable = true;
+  };
+  # .............................................................................................................................................................................................
   # git
   programs.git = {
       enable = true;
@@ -246,15 +215,6 @@
       };
   };
 
-  # services and settings
-  services.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  services.pipewire = {
-	enable = true;
-	alsa.enable = true;
-	alsa.support32Bit = true;
-	pulse.enable = true;
-  };
 
   # bash
   programs.bash = {
@@ -291,7 +251,49 @@
 	copy = "wl-copy";
 	paste = "wl-paste";
 	};
+  }; 
+ 
+  # Set environment variables
+
+  environment.variables = {
+	PATH = [
+		"$HOME/scripts"
+	];
   };
+ # prereqs for citrix_workspace
+
+#  nixpkgs.config.permittedInsecurePackages = [
+#    "libsoup-2.74.3" 
+#    "libxml2-2.13.8"
+#   ];
+#
+#   let  
+#	citrix-src = builtins.fetchTarball {  
+#	url = Fileurl-to-the-package;  
+#	sha256 = "sha256:thesha256";  
+#	};  
+#      citrix-work = pkgs.citrix-workspace.overrideAttrs (oldAttrs: { src = citrix-src; });   
+#    in  
+#      environment.packages = [ citrix-work ];
+
+  # register fonts
+  fonts.packages = with pkgs; [
+	nerd-fonts.jetbrains-mono
+	corefonts
+  ];
+  # services 
+  # enable swaylock to use the pam services
+  security.pam.services.swaylock = {};
+
+  services.pulseaudio.enable = false;
+  security.rtkit.enable = true;
+  services.pipewire = {
+	enable = true;
+	alsa.enable = true;
+	alsa.support32Bit = true;
+	pulse.enable = true;
+  };
+
   # tailscale 
 #  services.tailscale = {
 #	enable = true;
@@ -310,6 +312,13 @@
   };
   services.power-profiles-daemon.enable = false;	
   
+  # --- Updates & maintenance ---
+  system.autoUpgrade = {
+    enable = true;
+    allowReboot = false;
+    flake = "./nixos#nixos-work";
+    dates = "daily";
+  }
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
@@ -317,8 +326,6 @@
   #   enable = true;
   #   enableSSHSupport = true;
   # };
-
-  # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
