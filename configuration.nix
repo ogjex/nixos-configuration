@@ -306,7 +306,7 @@
 	corefonts
   ];
   # services 
-  services.fwup.enable = true;
+  services.fwupd.enable = true;
   services.fstrim.enable = true;
   # enable swaylock to use the pam services
   security.pam.services.swaylock = {};
