@@ -111,13 +111,6 @@
 
   security.pam.services.swaylock = {};
 
-  # Set environment variables
-
-  environment.variables = {
-	PATH = [
-		"$HOME/scripts"
-	];
-  };
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -146,6 +139,8 @@
     # wayland desktop stuff
     swayidle
     swayosd
+    swaybg
+    swaylock
     wlr-randr
     grim
     slurp
@@ -153,7 +148,6 @@
     wlogout
     sox
     wmenu
-    swaybg
     waybar
     xdg-desktop-portal-wlr
     wev
@@ -161,7 +155,6 @@
     wl-clip-persist
     cliphist
     wlsunset
-    swaylock
     # sound and display controls
     brightnessctl
     pamixer
@@ -171,13 +164,11 @@
     signal-desktop
     # terminal fluff and stuff
     zsh
-    zoxide
     bat
     fzf
     highlight
     bat
     tmux    
-    starship
     alacritty
     tealdeer
     fastfetch
@@ -192,8 +183,6 @@
     librewolf
     chromium
     # security
-    _1password-gui
-    _1password-cli
     dislocker
     # system utils
     plymouth
@@ -207,7 +196,15 @@
     texliveFull
   ];  
   
-  # prereqs for citrix_workspace
+ 
+  # Set environment variables
+
+  environment.variables = {
+	PATH = [
+		"$HOME/scripts"
+	];
+  };
+ # prereqs for citrix_workspace
 
 #  nixpkgs.config.permittedInsecurePackages = [
 #    "libsoup-2.74.3" 
