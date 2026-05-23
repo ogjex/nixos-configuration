@@ -94,7 +94,7 @@
   virtualisation.cri-o.enable = true;
 
   # enable programs as services
-  programs.starship.enable = true;
+#  programs.starship.enable = true;
   programs.zoxide.enable = true;
   programs.mango.enable = true;
   programs._1password-gui.enable = true;
