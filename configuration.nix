@@ -177,6 +177,7 @@
     htop
     fd
     ripgrep
+    starship
     nerd-fonts.jetbrains-mono
     # browsers
     vivaldi
