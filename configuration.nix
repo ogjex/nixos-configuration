@@ -39,10 +39,34 @@
   boot.loader.systemd-boot.consoleMode = "max";
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+ 
+  # --- nix system settings --- 
+  nix.settings = {
+    # enable flakes
+    experimental-features = [ "nix-command" "flakes" ];
+    auto-optimise-store = true;
+  };
 
-  # enable flakes
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  networking.hostName = "nixos-work"; # Define your hostname.
+  # --- Updates & maintenance ---
+  system.autoUpgrade = {
+    enable = true;
+    allowReboot = false;
+    flake = "./nixos#nixos-work";
+    dates = "daily";
+  };
+   
+  nix.gc = {
+    automatic = true;
+    dates = "monthly";
+    options = "--delete-older-than 30d";
+  };
+
+  nix.optimise = {
+    automatic = true;
+    dates = ["monthly"];
+  };
+
+ networking.hostName = "nixos-work"; # Define your hostname.
   networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -282,6 +306,8 @@
 	corefonts
   ];
   # services 
+  services.fwup.enable = true;
+  services.fstrim.enable = true;
   # enable swaylock to use the pam services
   security.pam.services.swaylock = {};
 
@@ -311,22 +337,8 @@
 	};
   };
   services.power-profiles-daemon.enable = false;	
-  
-  # --- Updates & maintenance ---
-  system.autoUpgrade = {
-    enable = true;
-    allowReboot = false;
-    flake = "./nixos#nixos-work";
-    dates = "daily";
-  };
-   
-  nix.gc = {
-    automatic = true;
-    dates = "monthly";
-    options = "--delete-older-than 30d";
-  };
 
-  # Some programs need SUID wrappers, can be configured further or are
+   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
   # programs.gnupg.agent = {
