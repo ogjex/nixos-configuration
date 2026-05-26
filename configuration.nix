@@ -133,6 +133,7 @@
     kubectl
     kubernetes
     kubernetes-helm
+    istioctl
     cri-tools
     kind
     minikube
