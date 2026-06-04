@@ -129,6 +129,7 @@
     # config management
     chezmoi
     # container stuff
+    distrobox
     docker
     kubectl
     kubernetes
