@@ -178,6 +178,8 @@
     highlight
     bat
     tmux    
+    vifm
+    vimv
     alacritty
     tealdeer
     fastfetch
