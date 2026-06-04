@@ -194,6 +194,7 @@
     # security
     dislocker
     # system utils
+    ntfs3g
     plymouth
     tlp
     # work related-apps 
