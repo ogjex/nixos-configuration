@@ -174,7 +174,6 @@
     zsh
     fzf
     highlight
-    cat
     bat
     tmux    
     vifm
@@ -217,8 +216,8 @@
     enable = true;
   };
   programs.nixvim = {
-    enable = true;
   config = {
+    enable = true;
     defaultEditor = true;
     colorschemes.catppuccin.enable = true;
     plugins.lualine.enable = true;
