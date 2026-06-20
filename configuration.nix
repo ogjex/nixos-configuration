@@ -218,6 +218,8 @@
   programs.nixvim = {
     enable = true;
     defaultEditor = true;
+    colorschemes.tokyonight.enable = true;
+    colorschemes.midnighttokyo.enable = true;
     colorschemes.catppuccin.enable = true;
     plugins.lualine.enable = true;
     viAlias = true;
@@ -239,7 +241,6 @@
       number = true;
       relativenumber = true;
       cursorline = true;
-      list = true;
       colorcolumn = "80";
       scrolloff = 8;
       sidescrolloff = 5;
