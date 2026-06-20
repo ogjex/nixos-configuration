@@ -218,9 +218,7 @@
   programs.nixvim = {
     enable = true;
     defaultEditor = true;
-    colorschemes.tokyonight.enable = false;
-    colorschemes.tokyomidnight.enable = true;
-    colorschemes.catppuccin.enable = false;
+    colorschemes.desert.enable = true;
     plugins.lualine.enable = true;
     viAlias = true;
     vimAlias = true;
