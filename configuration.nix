@@ -219,7 +219,7 @@
     enable = true;
     defaultEditor = true;
     colorschemes.tokyonight.enable = false;
-    colorschemes.midnighttokyo.enable = true;
+    colorschemes.tokyomidnight.enable = true;
     colorschemes.catppuccin.enable = false;
     plugins.lualine.enable = true;
     viAlias = true;
