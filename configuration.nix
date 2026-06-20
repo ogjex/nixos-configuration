@@ -216,45 +216,77 @@
     enable = true;
   };
   programs.nixvim = {
-  config = {
     enable = true;
     defaultEditor = true;
     colorschemes.catppuccin.enable = true;
     plugins.lualine.enable = true;
-	    viAlias = true;
-	    vimAlias = true;
-		    opts = {
-		      updatetime = 100;
-		      number = true;
-		      relativenumber = true;
-		      autoindent = true;
-		      autowrite = true;
-		      confirm = true;
-		      clipboard = "unnamedplus";
-		      cursorline = true;
-		      list = true;
-		      expandtab = true;
-		      shiftround = true;
-		      shiftwidth = 2;
-		      signcolumn = "yes";
-		      smartcase = true;
-		      smartindent = true;
-		      tabstop = 2;
+    viAlias = true;
+    vimAlias = true;
+    globals.mapleader = " ";
+    opts = {
 
-		      ignorecase = true;
-		      incsearch = true;
-		      completeopt = "menu,menuone,noselect";
-		      wildmode = "longest:full,full";
+      # general settings
+      timeoutlen = 500;
+      termguicolors = true;
+      completeopt = "menu,menuone,noselect";
+      updatetime = 100;
+      clipboard = "unnamedplus";      
+      mouse = "a";
+      splitbelow = true;
+      splitright = true;
 
-		      swapfile = false;
-		      undofile = true;
-		      undolevels = 10000;
+      # line numbers and cursor settings
+      number = true;
+      relativenumber = true;
+      cursorline = true;
+      list = true;
+      colorcolumn = "80";
+      scrolloff = 8;
+      sidescrolloff = 5;
 
-		      spell = false;
-		      spelllang = "en_us";
-		    };
-		};
+      # tab settings
+      autoindent = true;
+      expandtab = true;
+      shiftwidth = 2;
+      tabstop = 2;
+      softtabstop = 2;
+      shiftround = true;
+      signcolumn = "yes";
+      smartindent = true;
 
+      #search
+      ignorecase = true;
+      smartcase = true;
+      incsearch = true;
+      hlsearch = false;
+      wildmode = "longest:full,full";
+
+      # save settings
+      autowrite = true;
+      confirm = true;
+
+      swapfile = false;
+      backup = false;
+      writebackup = false;
+      undofile = true;
+      undolevels = 10000;
+
+      spell = false;
+      spelllang = "en_us";
+
+      list = true;
+      listchars = {
+        tab = "-->";
+        trail = "*";
+        extends = ">";
+        precedes = "<";
+      };
+
+# folding 
+      foldmethod = "indent";
+      foldlevel = 99;
+      foldenable = false;
+      };
   };
   # .............................................................................................................................................................................................
   # git
