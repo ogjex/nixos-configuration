@@ -218,18 +218,16 @@
   };
   programs.nixvim = {
     enable = true;
+  config = {
     defaultEditor = true;
     colorschemes.catppuccin.enable = true;
     plugins.lualine.enable = true;
-	  config = {
 	    viAlias = true;
 	    vimAlias = true;
-
 		    opts = {
 		      updatetime = 100;
 		      number = true;
 		      relativenumber = true;
-
 		      autoindent = true;
 		      autowrite = true;
 		      confirm = true;
