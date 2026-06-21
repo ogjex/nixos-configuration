@@ -218,7 +218,8 @@
   programs.nixvim = {
     enable = true;
     defaultEditor = true;
-    colorschemes.desert.enable = true;
+
+#    colorschemes.desert.enable = true;
     plugins.lualine.enable = true;
     viAlias = true;
     vimAlias = true;
@@ -281,11 +282,92 @@
         precedes = "<";
       };
 
-# folding 
+      # folding 
       foldmethod = "indent";
       foldlevel = 99;
       foldenable = false;
       };
+
+    keymaps = [
+      # telescope
+      {
+        mode = "n";
+        key = "<leader>ff";
+        action = "<cmd>Telescope find_files<CR>";
+        options.silent = true;
+      }
+      {
+        mode = "n";
+        key = "<leader>fg";
+        action = "<cmd>Telescope live_grep<CR>";
+        options.silent = true;
+      }
+      {
+        mode = "n";
+        key = "<leader>fb";
+        action = "<cmd>Telescope buffers<CR>";
+        options.silent = true;
+      }
+      {
+        mode = "n";
+        key = "<leader>fh";
+        action = "<cmd>Telescope help_tags<CR>";
+        options.silent = true;
+      }
+    ];
+    #plugins
+    plugins = {
+      lsp =  {
+        enable = true;
+        servers = {
+          vue_ls.enable   = true;
+          ts_ls.enable    = true;
+          cssls.enable    = true;
+          jsonls.enable   = true;
+          lua_ls.enable   = true;
+          nixd.enable     = true;
+        };
+      };
+      dashboard = {
+        enable = true;
+        settings = {
+          theme = "doom";
+          config = {
+            header = [
+            "TIME TO VIM, NIXJEX"
+            ];
+            center = [
+            ];
+            footer = [
+            ];
+          };
+        };
+      };
+      webdev-icons.enable = true;
+      colorscheme.tokyonight = {
+        enable = true;
+        settings.style = "moon"; # options: "moon", "storm", "night", "day"
+      };
+      telescope = {
+        enable = true;
+        extentions."fzf-native" = {
+          enable = true; 
+          settings = {
+            fuzzy = true;
+            override_file_sorter = true;
+            override_generic_sorter = true;
+            case_mode = "smart_case";
+          };
+        };
+        settings = {
+          defaults= {
+            layout_config = { prompt_position = "top"; };
+            sorting_strategy = "ascending";
+            };
+            pickers.find_files.hidden = true;
+          };
+      };
+    };
   };
   # .............................................................................................................................................................................................
   # git
@@ -395,7 +477,7 @@
 #  };
 
   # tlp settings
-  services.tlp = {
+services.tlp = {
 	enable = true;
 	settings = {
 		CPU_SCALING_GOVERNOR_ON_AC = "performance";
@@ -404,7 +486,7 @@
 		START_CHARGE_THRESH_BAT0 = 40;
 		STOP_CHARGE_THRESH_BAT0 = 80;
 	};
-  };
+};
   services.power-profiles-daemon.enable = false;	
 
    # Some programs need SUID wrappers, can be configured further or are
