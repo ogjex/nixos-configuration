@@ -220,7 +220,6 @@
     defaultEditor = true;
 
 #    colorschemes.desert.enable = true;
-    plugins.lualine.enable = true;
     viAlias = true;
     vimAlias = true;
     globals.mapleader = " ";
@@ -317,6 +316,18 @@
     ];
     #plugins
     plugins = {
+
+      lualine = {
+        enable = true;
+      };
+
+      treesitter = {
+        enable = true;
+        highlight.enable = true;
+        indent.enable = true;
+        folding.enable = true;
+      };
+
       lsp =  {
         enable = true;
         servers = {
@@ -346,7 +357,7 @@
       webdev-icons.enable = true;
       colorscheme.tokyonight = {
         enable = true;
-        settings.style = "moon"; # options: "moon", "storm", "night", "day"
+        settings.style = "night"; # options: "moon", "storm", "night", "day"
       };
       telescope = {
         enable = true;
