@@ -125,6 +125,8 @@
     git
     wget
     curl
+    nmap
+    net-tools
     # config management
     chezmoi
     # container stuff
@@ -357,7 +359,7 @@
       webdev-icons.enable = true;
       colorscheme.tokyonight = {
         enable = true;
-        settings.style = "night"; # options: "moon", "storm", "night", "day"
+        settings.style = "day"; # options: "moon", "storm", "night", "day"
       };
       telescope = {
         enable = true;
@@ -404,47 +406,40 @@
 
   # bash
   programs.bash = {
-	enable = true;
-	completion.enable = true;
+    enable = true;
+    completion.enable = true;
 
-	interactiveShellInit ="
-	set -o vi
-	";
-	# following only for home manager
-	#historyFileSize = 10000;
-	#historySize = 1000;
-	#historyFile = "$HOME/.bash_history";
+    interactiveShellInit ="
+    set -o vi
+    ";
+    # following only for home manager
+    #historyFileSize = 10000;
+    #historySize = 1000;
+    #historyFile = "$HOME/.bash_history";
 
-	#shellOptions = [
-	#"histappend"
-	#];
+    #shellOptions = [
+    #"histappend"
+    #];
 
-	shellAliases = {
+    shellAliases = {
 	
-	#eza
-	ls = "eza --icons --git --group-directories-first";
-	ll = "eza -lah --icons --git --group-directories-first";
-	tree = "eza --tree --icons";
+      #eza
+      ls = "eza --icons --git --group-directories-first";
+      ll = "eza -lah --icons --git --group-directories-first";
+      tree = "eza --tree --icons";
 
-	
-	# bat
-	cat = "bat";
-
-	#grep
-	grep = "rg";
-
-	#clipboard
-	copy = "wl-copy";
-	paste = "wl-paste";
-	};
-  }; 
+      #clipboard
+      copy = "wl-copy";
+      paste = "wl-paste";
+      };
+    }; 
  
   # Set environment variables
 
   environment.variables = {
-	PATH = [
-		"$HOME/scripts"
-	];
+    PATH = [
+      "$HOME/scripts"
+    ];
   };
  # prereqs for citrix_workspace
 
