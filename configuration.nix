@@ -201,6 +201,7 @@
     ntfs3g
     plymouth
     tlp
+    syncthing
     # work related-apps 
 #    citrix_workspace
     libreoffice
@@ -218,6 +219,9 @@
   programs.sway = {
     enable = true;
   };
+
+  programs.syncthing.enable = true;
+
   programs.nixvim = {
     enable = true;
     defaultEditor = true;
