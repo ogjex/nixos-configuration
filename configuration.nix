@@ -127,7 +127,6 @@
     curl
     nmap
     net-tools
-    ufw
     # config management
     chezmoi
     # container stuff
