@@ -118,11 +118,6 @@
   virtualisation.cri-o.enable = true;
 
   programs.nix-ld.enable = true;
-  programs.nix-ld.libraries = with pkgs; [
-    export NIX_LD_LIBRARY_PATH=/$HOME/.local/bin/zli:$NIX_LD_LIBRARY_PATH
-    # Add any missing dynamic libraries for unpackaged programs
-    # here, NOT in environment.systemPackages
-  ];
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
