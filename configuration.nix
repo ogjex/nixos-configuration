@@ -137,7 +137,7 @@
     kubernetes
     kubernetes-helm
     flux
-    flux-operator
+    fluxcd-operator
     forgejo-cli
     istioctl
     cri-tools

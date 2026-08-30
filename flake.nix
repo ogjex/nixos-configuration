@@ -37,6 +37,5 @@
 				./configuration.nix
 				# other imports
 			];
-		};
 	};
 }
