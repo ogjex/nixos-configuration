@@ -141,6 +141,9 @@
     kubectl
     kubernetes
     kubernetes-helm
+    flux
+    flux-operator
+    forgejo-cli
     istioctl
     cri-tools
     kind
