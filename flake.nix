@@ -38,4 +38,4 @@
 				# other imports
 			];
 	};
-}
+};
