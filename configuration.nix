@@ -136,7 +136,7 @@
     kubectl
     kubernetes
     kubernetes-helm
-    flux
+    fluxcd
     fluxcd-operator
     forgejo-cli
     istioctl
