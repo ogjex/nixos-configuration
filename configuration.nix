@@ -476,7 +476,6 @@
   services.pcscd.enable = true;
   programs.gnupg.agent = {
     enable = true;
-    pinentryPackage = "gtk";
     enableSSHSupport = true;
   };
   services.fwupd.enable = true;
