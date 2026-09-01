@@ -130,6 +130,8 @@
     curl
     nmap
     net-tools
+    netcat
+    libtelnet
     # config management
     chezmoi
     # container stuff
