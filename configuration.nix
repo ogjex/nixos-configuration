@@ -476,7 +476,7 @@
   services.pcscd.enable = true;
   programs.gnupg.agent = {
     enable = true;
-    pinentryPackage = null;
+    pinentryPackage = gtk2;
     enableSSHSupport = true;
   };
   services.fwupd.enable = true;
