@@ -476,7 +476,7 @@
   services.pcscd.enable = true;
   programs.gnupg.agent = {
     enable = true;
-    pinentryFlavor = "gtk2";
+    pinentryPackage = "gtk2";
     enableSSHSupport = true;
   };
   services.fwupd.enable = true;
