@@ -473,6 +473,12 @@
 	corefonts
   ];
   # services 
+  services.pcscd.enable = true;
+  programs.gnupg.agent = {
+    enable = true;
+    pinentryFlavor = "gtk2";
+    enableSSHSupport = true;
+  };
   services.fwupd.enable = true;
   services.fstrim.enable = true;
   # enable swaylock to use the pam services
