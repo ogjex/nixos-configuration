@@ -148,6 +148,7 @@
     kind
     minikube
     k9s
+    sops
     # development stuff
     gcc 
     cmake
