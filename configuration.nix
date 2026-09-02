@@ -123,9 +123,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    git
-    git-crypt
-    gnupg
     wget
     curl
     nmap
@@ -148,8 +145,12 @@
     kind
     minikube
     k9s
-    sops
     # development stuff
+    git
+    git-crypt
+    gnupg
+    sops
+    age
     gcc 
     cmake
     gnumake
