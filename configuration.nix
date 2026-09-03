@@ -139,7 +139,7 @@
     kubernetes-helm
     fluxcd
     fluxcd-operator
-    forgejo-cli
+    # forgejo-cli # older version not up to date
     istioctl
     cri-tools
     kind
