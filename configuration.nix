@@ -129,6 +129,7 @@
     net-tools
     netcat
     libtelnet
+    sshpass
     # config management
     chezmoi
     # container stuff
