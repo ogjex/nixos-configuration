@@ -157,6 +157,7 @@
     gnumake
     fnm
     go
+    yq #yaml, toml, xml processor
     # wayland desktop stuff
     swayidle
     swayosd
