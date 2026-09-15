@@ -130,6 +130,7 @@
     netcat
     libtelnet
     sshpass
+    iperf3
     # config management
     chezmoi
     # container stuff
