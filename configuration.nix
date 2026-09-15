@@ -143,6 +143,7 @@
     fluxcd-operator
     # forgejo-cli # older version not up to date
     istioctl
+    talosctl
     cri-tools
     kind
     minikube
